@@ -1,0 +1,8 @@
+language = Objective-C
+module = TKKMPSample
+
+headers = /Users/tetsuyak/Documents/Projects/kmp/kmp_examples/TKKMPSample/composeApp/src/iosMain/c_interop/iosDerivedSources/TKKMPSample-Swift.h
+headerFilter = /Users/tetsuyak/Documents/Projects/kmp/kmp_examples/TKKMPSample/composeApp/src/iosMain/c_interop/iosDerivedSources/TKKMPSample-Swift.h
+compilerOpts = -I./composeApp/src/iosMain/c_interop/iosDerivedSources
+linkerOpts = -framework UIKit
+linkerOpts = -framework MapLibre
