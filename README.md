@@ -41,3 +41,11 @@ https://github.com/user-attachments/assets/f61374b8-975c-4d37-83a4-fcb80625351d
 - [iOS/Android] スライダーによるスクロールがカクつく・もっさりしてる。指で操作したときのように滑らかでない
   - スライダーやジャイロからの値変更通知 → SDK操作でカメラ位置を都度セットしているのでオーバヘッドが大きいと思われる
 - [iOS/Android] Zoom率を上げると前後進行した後、拡大されたままのマップ画像が更新されない時がある
+
+---
+このプロジェクトでは、以下のオープンソースライブラリを使用しています：
+
+- MapLibre Navigation iOS
+  Copyright (c) [MapLibre Community Contributors]
+  Licensed under Apache License 2.0
+  https://www.apache.org/licenses/LICENSE-2.0
