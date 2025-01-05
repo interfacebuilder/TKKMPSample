@@ -4,6 +4,8 @@
 
 Kotlin Multiplatform/Compose Multiplatformで地図を表示し、スライダーを使った加速度付きUIで移動するデモプログラムです。 ジャイロのデータを使ってスマホを傾けて左右に回転できます。
 
+https://github.com/user-attachments/assets/f61374b8-975c-4d37-83a4-fcb80625351d
+
 ## 開発環境
 
 - macOS 15
