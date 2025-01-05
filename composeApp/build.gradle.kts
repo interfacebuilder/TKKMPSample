@@ -27,8 +27,9 @@ kotlin {
             cinterops {
                 val tkkmpSampleInterop by creating {
                     defFile = file("src/iosMain/c_interop/TKKMPSample.def")
-                    val path = "-I${projectDir}/src/iosMain/c_interop/iosDerivedSources"
-                    compilerOpts(path)
+                    val derivedSourcesDir = file("src/iosMain/c_interop/iosDerivedSources").absolutePath
+                    compilerOpts("-I$derivedSourcesDir")
+                    headers("$derivedSourcesDir/TKKMPSample-Swift.h")
                 }
             }
         }
@@ -45,8 +46,9 @@ kotlin {
             cinterops {
                 val tkkmpSampleInterop by creating {
                     defFile = file("src/iosMain/c_interop/TKKMPSample.def")
-                    val path = "-I${projectDir}/src/iosMain/c_interop/iosDerivedSources"
-                    compilerOpts(path)
+                    val derivedSourcesDir = file("src/iosMain/c_interop/iosDerivedSources").absolutePath
+                    compilerOpts("-I$derivedSourcesDir")
+                    headers("$derivedSourcesDir/TKKMPSample-Swift.h")
                 }
             }
         }
