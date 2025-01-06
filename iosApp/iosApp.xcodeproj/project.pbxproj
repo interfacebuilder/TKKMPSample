@@ -207,7 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Swift ブリッジングヘッダをコピーする\ncp \"${CONFIGURATION_TEMP_DIR}/${PROJECT_NAME}.build/DerivedSources/TKKMPSample-Swift.h\" \"${SRCROOT}/../composeApp/src/iosMain/c_interop/iosDerivedSources/TKKMPSample-Swift.h\"\n";
+			shellScript = "# コピー元のパス\nSOURCE=\"${CONFIGURATION_TEMP_DIR}/${PROJECT_NAME}.build/DerivedSources/TKKMPSample-Swift.h\"\n\n# コピー先のパス\nDESTINATION=\"${SRCROOT}/../composeApp/src/iosMain/c_interop/iosDerivedSources/TKKMPSample-Swift.h\"\n\n# ファイルが存在する場合のみコピーを実行\nif [ -f \"$SOURCE\" ]; then\n    cp \"$SOURCE\" \"$DESTINATION\"\nelse\n    echo \"Source file does not exist: $SOURCE\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
